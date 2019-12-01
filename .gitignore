@@ -1,31 +1,46 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
+syntax: glob
 
-# Compiled Dynamic libraries
-*.so
+# ignore .svn
+.svn
+.vs
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+### VisualStudio ###
 
-# Objects from the makefile
-*.list
+# User-specific files
+*.db
+*.opendb
+*.obj
+*.gem
+*.exe
+*.laccdb
+*.sdf
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+~$*.*
 
-# CVS repositories
-CVS
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+build/
+bld/
+bin/
+ipch/
+.vs/
 
-# Left over images
-*.jpg
-*.jls
-*.ppm
-*.pgm
-*.out
+[Oo]bj/
+msbuild.log
 
-# core dumps
-core
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
 
-#Editor temporaries
-*~
+# Temp
+utmp
+
